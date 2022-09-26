@@ -1,13 +1,27 @@
-
-
 .shop-container {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color: rgb(226, 244, 244);
 }
 
 .products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  margin: 100px 25px;
+}
+
+.cart-container {
+  background-color: blueviolet;
+}
+
+@media only screen and (max-width: 768px) {
+  .shop-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .products-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
-    margin: 100px 25px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
